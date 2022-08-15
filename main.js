@@ -11,7 +11,6 @@ var my_copyRight = document.getElementById("copy-right");
 var home = document.getElementById("hm");
 // End Variables
 
-
 // Start Functions
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
@@ -29,8 +28,6 @@ logo.onclick = function () {
         home.classList.add("active");
     }
 }
-
-
 arrow.onclick = function () {
     for (let i = 0; i < btns.length; i++) {
         var current = document.getElementsByClassName("active");
