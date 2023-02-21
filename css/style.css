@@ -312,6 +312,7 @@ html{
     font-family: sans-serif;
     box-shadow: 1px 1px 4px -1px black;
     border-radius: 5px;
+    height: fit-content;
 }
 @media (max-width: 767px) {
     .portfolio .portfolio-content .card {
@@ -322,12 +323,16 @@ html{
     max-width: 100%;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    width: -webkit-fill-available;
+    max-height: 172.68px;
 }
 .portfolio .portfolio-content .card .info {
     padding: 20px;
 }
 .portfolio .portfolio-content .card .info h3 {
     margin: 0;
+    max-height: 43px;
+    min-height: 43px;
 }
 @media (max-width: 767px) {
     .portfolio .portfolio-content .card .info h3 {
@@ -350,17 +355,17 @@ html{
     background-color: #f5f5f5;
     border-radius: 4px;
     padding: 4px 7px;
-    border: 2px solid #19c8fa;
+    border: 2px solid var(--main-color);
 }
 @media (max-width: 767px) {
     .portfolio .portfolio-content .card .info button {
         background-color: var(--section-background);
-        color: white;
+        color: var(--main-color);
     }
 }
 .portfolio .portfolio-content .card .info button:hover {
     cursor: pointer;
-    background-color: #19c8fa;
+    background-color: var(--main-color);
 }
 @media (max-width: 767px) {
     .portfolio .portfolio-content .card .info button:hover {
@@ -374,10 +379,10 @@ html{
 }
 .container a .more_projects {
     padding: 10px;
-    border: 2px solid blue;
+    border: 2px solid var(--main-color);
     font-family: sans-serif;
     margin-top: 70px;
-    color: blue;
+    color: var(--main-color);
     border-radius: 3px;
 }
 @media (max-width: 767px) {
@@ -386,7 +391,7 @@ html{
     }
 }
 .container a .more_projects:hover {
-    background-color: blue;
+    background-color: var(--main-color);
     color: black;
     cursor: pointer;
 }
@@ -448,6 +453,11 @@ html{
 }
 .about .about-content .text a {
     color: blue;
+}
+@media (max-width: 767px) {
+    .about .about-content .text a {
+        color: var(--main-color);
+    }
 }
 .about .about-content .text hr{
     width: 50%;
